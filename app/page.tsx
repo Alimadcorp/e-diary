@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { HomePostPreview } from "./components";
 
 export default function Home() {
   return (
@@ -8,9 +8,14 @@ export default function Home() {
           <h1 className="text-4xl font-bold tracking-tight text-black dark:text-zinc-50 sm:text-5xl">
             E-Diaries
           </h1>
-          <p className="max-w-xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+          <p className="max-w-xl text-lg text-left leading-relaxed text-zinc-600 dark:text-zinc-400">
             Electronic diary? Diary for section E? Either way, this is a place where you can <span className="text-white">write about your day or week</span> and <span className="text-white">share experiences</span> with others, see the same experience but from other's shoes, and <span className="text-white">critique or comment</span> on those experiences.
           </p>
+        </div>
+
+        <div className="grid grid-cols-1 w-full gap-4 font-medium sm:grid-cols-2">
+          <HomePostPreview title="The Very First Day" desc="Ok so, on the first day of..." date={new Date()} author="MeowMad" read={true} path="/abc"/>
+          <HomePostPreview title="The Very First Day" desc="Ok so, on the first day of..." date={new Date()} author="MeowMad" read={false} path="/def"/>
         </div>
 
         <div className="flex flex-col w-full sm:w-auto gap-4 font-medium sm:flex-row">
@@ -28,14 +33,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              className="dark:invert h-3.5 w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Start Your Own Diary
+            GET WRITING YOU FOOL
           </a>
         </div>
       </main>
