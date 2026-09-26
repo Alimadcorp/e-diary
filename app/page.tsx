@@ -14,7 +14,7 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 w-full gap-4 font-medium sm:grid-cols-2">
-          <HomePostPreview title="The Very First Day" desc="Ok so, on the first day of..." date={new Date()} author="MeowMad" read={true} path="/abc"/>
+          <HomePostPreview title="Day 1 at FAST" desc="It had been such a long wait.. the day has finally arrived, " date={new Date()} author="MeowMad" read={true} path="/abc"/>
           <HomePostPreview title="The Very First Day" desc="Ok so, on the first day of..." date={new Date()} author="MeowMad" read={false} path="/def"/>
         </div>
 

@@ -1,3 +1,19 @@
+# E-Diaries
+
+## Ummm Structure:
+/:user for all journals and /:user/:journal for a specific one?
+/create to create a new journal, and same page will ask for creation of a diary if one doesnt exist already on the user, will only ask for journal appearance (public/draft/unlisted) and alias and title
+/edit/:journal to edit a created journal
+/browse to search for journals, or users
+/onboard to login or signup
+/login and /signup lead to /onboard
+/app for management and shi
+
+
+### A project by Muhammad Ali
+
+# Deployment
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
